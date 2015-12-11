@@ -21,8 +21,9 @@ function pageLinks() {
                         pagination += "<li onclick='paginate(this)'><a>" + i + "</a></li>";
                     }
                     jQuery('.pagination').html(pagination);
-                    jQuery('.pagination li:first').addClass('active');
                     paginate(jQuery('.pagination li:first'));
+                    jQuery('.pagination li:first').addClass('active');
+                    
                 }
             });
 }
